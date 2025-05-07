@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std ;
+
+
+void worstfit(int blocksize[],int m,int process[],int n){
+    int allocation[100];
+    for (int i = 0; i < n; i++) {
+        int worstIdx = -1;
+
+        for (int j = 0; j < m; j++) {
+            if (blocksize[j] >= process[i]) {
+                if (worstIdx == -1 || blocksize[j] > blocksize[worstIdx]) {
+                    worstIdx = j;
+                }
+            }
+        }
+        if (worstIdx != -1) {
+            allocation[i] = worstIdx;
+            blocksize[worstIdx] -= process[i];
+        }
+    }
+    cout << "\n process id\tprocess size\tallocated\n ";
+    for(int i=0 ;i<n;i++){
+        cout <<" " <<i+1 << "\t\t"<< process[i] << "\t\t" ;
+        if(allocation[i]!=-1){
+            cout << allocation[i]+ 1 ;
+        }
+        else{
+            cout <<" Not allocated ";
+        }
+        cout << endl;
+    }
+}
+int main(){
+    int m,n;
+    int blocksize[100], process[100];
+    cout << "Enter the no of memory blocks";
+    cin >> m;
+    cout << "Enter the no of processes ";
+    cin >> n;
+    cout << "Enter the memory blocks size";
+    for(int i=0;i<m;i++){
+        cin >> blocksize[i];
+    }
+    cout << "Enter the Process Size";
+    for(int j=0;j<n;j++){
+        cin >> process[j];
+    }
+    worstfit(blocksize,m,process,n);
+    return 0;
+}

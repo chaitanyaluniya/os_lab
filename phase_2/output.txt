@@ -1,0 +1,43 @@
+Program Terminated Abnormally with Error: Operand Error
+Status of Registers: 
+IC: 1, GR:     , SI: 0, TI: 0, PI: 2, TTC: 0, TLL: 5, LLC: 0, JID: 4, PTR: 100, RA: 61, C: 0, IR: 0LR4 
+
+
+*       *   *   *   
+*       *                               
+*   *   *   *   *                       
+        *       *                       
+Program Terminated Abnormally with Error: Time Limit Exceeded
+Status of Registers: 
+IC: 31, GR: *   , SI: 0, TI: 2, PI: 0, TTC: 51, TLL: 4, LLC: 4, JID: 5, PTR: 210, RA: 112, C: 0, IR: SR82 
+
+
+Program Terminated Abnormally with Error: Out of Data
+Status of Registers: 
+IC: 1, GR:     , SI: 0, TI: 0, PI: 0, TTC: 2, TLL: 5, LLC: 0, JID: 7, PTR: 90, RA: 250, C: 0, IR: GD40 
+
+
+Program Terminated Abnormally with Error: Invalid Page Fault
+Status of Registers: 
+IC: 1, GR:     , SI: 0, TI: 0, PI: 3, TTC: 2, TLL: 5, LLC: 0, JID: 4, PTR: 110, RA: 60, C: 0, IR: LR60 
+
+
+*       *   *   *   
+*       *                               
+*   *   *   *   *                       
+Program Terminated Abnormally with Error: Line Limit Exceeded
+Status of Registers: 
+IC: 28, GR: *   , SI: 0, TI: 0, PI: 0, TTC: 45, TLL: 3, LLC: 4, JID: 4, PTR: 190, RA: 240, C: 0, IR: PD70 
+
+
+*       *   *   *   
+*       *                               
+*   *   *   *   *                       
+        *       *                       
+*   *   *       *                       
+
+Program Terminated Normally
+Status of Registers: 
+IC: 37, GR: *   , SI: 3, TI: 0, PI: 0, TTC: 58, TLL: 5, LLC: 5, JID: 4, PTR: 250, RA: 136, C: 0, IR: H    
+
+
